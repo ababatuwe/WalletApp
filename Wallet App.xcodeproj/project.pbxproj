@@ -17,8 +17,20 @@
 		404CAF1F1E81729200BD7396 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404CAF1E1E81729200BD7396 /* WalletViewController.swift */; };
 		404CAF231E81ABBF00BD7396 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404CAF221E81ABBF00BD7396 /* Functions.swift */; };
 		404CAF251E81AC1300BD7396 /* Date+StringRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404CAF241E81AC1300BD7396 /* Date+StringRepresentation.swift */; };
+		40E0A6551E980B2B00ECA48E /* Wallet_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E0A6541E980B2B00ECA48E /* Wallet_AppTests.swift */; };
+		40E0A65D1E980B8700ECA48E /* AccountDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E0A65C1E980B8700ECA48E /* AccountDownloadManager.swift */; };
 		9666793A2A05C90E2AB2D9E6 /* Pods_Wallet_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188D98C5C1FED07B8692D608 /* Pods_Wallet_App.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		40E0A6571E980B2B00ECA48E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 404CAEFB1E80D8E200BD7396 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 404CAF021E80D8E200BD7396;
+			remoteInfo = "Wallet App";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		188D98C5C1FED07B8692D608 /* Pods_Wallet_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wallet_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +46,10 @@
 		404CAF1E1E81729200BD7396 /* WalletViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		404CAF221E81ABBF00BD7396 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		404CAF241E81AC1300BD7396 /* Date+StringRepresentation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+StringRepresentation.swift"; sourceTree = "<group>"; };
+		40E0A6521E980B2B00ECA48E /* Wallet AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wallet AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40E0A6541E980B2B00ECA48E /* Wallet_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet_AppTests.swift; sourceTree = "<group>"; };
+		40E0A6561E980B2B00ECA48E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40E0A65C1E980B8700ECA48E /* AccountDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountDownloadManager.swift; sourceTree = "<group>"; };
 		601F4A353E5F515111467797 /* Pods-Wallet App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallet App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Wallet App/Pods-Wallet App.release.xcconfig"; sourceTree = "<group>"; };
 		7BEA033522C04D7BE75D65BC /* Pods-Wallet App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wallet App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Wallet App/Pods-Wallet App.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -47,6 +63,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40E0A64F1E980B2B00ECA48E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -54,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				404CAF051E80D8E200BD7396 /* Wallet App */,
+				40E0A6531E980B2B00ECA48E /* Wallet AppTests */,
 				404CAF041E80D8E200BD7396 /* Products */,
 				EFDF43194DC401B708285FAE /* Pods */,
 				E1E86B5B3AF510B2FDB91037 /* Frameworks */,
@@ -64,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				404CAF031E80D8E200BD7396 /* Wallet App.app */,
+				40E0A6521E980B2B00ECA48E /* Wallet AppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +111,7 @@
 		404CAF261E81ACA100BD7396 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				40E0A65C1E980B8700ECA48E /* AccountDownloadManager.swift */,
 				404CAF1C1E81660A00BD7396 /* Account.swift */,
 			);
 			name = Models;
@@ -124,6 +150,15 @@
 				404CAF181E81627700BD7396 /* AccountCell.xib */,
 			);
 			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		40E0A6531E980B2B00ECA48E /* Wallet AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				40E0A6541E980B2B00ECA48E /* Wallet_AppTests.swift */,
+				40E0A6561E980B2B00ECA48E /* Info.plist */,
+			);
+			path = "Wallet AppTests";
 			sourceTree = "<group>";
 		};
 		E1E86B5B3AF510B2FDB91037 /* Frameworks */ = {
@@ -166,13 +201,31 @@
 			productReference = 404CAF031E80D8E200BD7396 /* Wallet App.app */;
 			productType = "com.apple.product-type.application";
 		};
+		40E0A6511E980B2B00ECA48E /* Wallet AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40E0A65B1E980B2B00ECA48E /* Build configuration list for PBXNativeTarget "Wallet AppTests" */;
+			buildPhases = (
+				40E0A64E1E980B2B00ECA48E /* Sources */,
+				40E0A64F1E980B2B00ECA48E /* Frameworks */,
+				40E0A6501E980B2B00ECA48E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				40E0A6581E980B2B00ECA48E /* PBXTargetDependency */,
+			);
+			name = "Wallet AppTests";
+			productName = "Wallet AppTests";
+			productReference = 40E0A6521E980B2B00ECA48E /* Wallet AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		404CAEFB1E80D8E200BD7396 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = agaba;
 				TargetAttributes = {
@@ -180,6 +233,12 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = N7QGY55H4B;
 						ProvisioningStyle = Automatic;
+					};
+					40E0A6511E980B2B00ECA48E = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = N7QGY55H4B;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 404CAF021E80D8E200BD7396;
 					};
 				};
 			};
@@ -197,6 +256,7 @@
 			projectRoot = "";
 			targets = (
 				404CAF021E80D8E200BD7396 /* Wallet App */,
+				40E0A6511E980B2B00ECA48E /* Wallet AppTests */,
 			);
 		};
 /* End PBXProject section */
@@ -210,6 +270,13 @@
 				404CAF191E81627700BD7396 /* AccountCell.xib in Resources */,
 				404CAF0E1E80D8E200BD7396 /* Assets.xcassets in Resources */,
 				404CAF0C1E80D8E200BD7396 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40E0A6501E980B2B00ECA48E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,12 +339,29 @@
 				404CAF1F1E81729200BD7396 /* WalletViewController.swift in Sources */,
 				404CAF071E80D8E200BD7396 /* AppDelegate.swift in Sources */,
 				404CAF231E81ABBF00BD7396 /* Functions.swift in Sources */,
+				40E0A65D1E980B8700ECA48E /* AccountDownloadManager.swift in Sources */,
 				404CAF1B1E81644700BD7396 /* AccountCell.swift in Sources */,
 				404CAF251E81AC1300BD7396 /* Date+StringRepresentation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		40E0A64E1E980B2B00ECA48E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40E0A6551E980B2B00ECA48E /* Wallet_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40E0A6581E980B2B00ECA48E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 404CAF021E80D8E200BD7396 /* Wallet App */;
+			targetProxy = 40E0A6571E980B2B00ECA48E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		404CAF0A1E80D8E200BD7396 /* Main.storyboard */ = {
@@ -418,6 +502,38 @@
 			};
 			name = Release;
 		};
+		40E0A6591E980B2B00ECA48E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = N7QGY55H4B;
+				INFOPLIST_FILE = "Wallet AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stanfordiOS.Wallet-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wallet App.app/Wallet App";
+			};
+			name = Debug;
+		};
+		40E0A65A1E980B2B00ECA48E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = N7QGY55H4B;
+				INFOPLIST_FILE = "Wallet AppTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.stanfordiOS.Wallet-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wallet App.app/Wallet App";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -438,6 +554,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		40E0A65B1E980B2B00ECA48E /* Build configuration list for PBXNativeTarget "Wallet AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40E0A6591E980B2B00ECA48E /* Debug */,
+				40E0A65A1E980B2B00ECA48E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
