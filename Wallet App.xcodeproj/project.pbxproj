@@ -226,7 +226,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = agaba;
 				TargetAttributes = {
 					404CAF021E80D8E200BD7396 = {
@@ -478,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7BEA033522C04D7BE75D65BC /* Pods-Wallet App.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N7QGY55H4B;
 				INFOPLIST_FILE = "Wallet App/Info.plist";
@@ -492,6 +493,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 601F4A353E5F515111467797 /* Pods-Wallet App.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = N7QGY55H4B;
 				INFOPLIST_FILE = "Wallet App/Info.plist";
